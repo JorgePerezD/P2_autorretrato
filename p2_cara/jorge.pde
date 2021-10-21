@@ -1,4 +1,6 @@
-void jorge(){
+void jorge(float posx, float posy){
+ push();
+   translate(posx, posy);
  //pelo
   strokeWeight(5);
   line(m*1,0,0,m*1);
@@ -32,4 +34,5 @@ void jorge(){
   line((m*3+m/2),m*3,(m*3+m/2),m*4);
   arc(m*3,m*4,m*1,m*1,radians(0),radians(90));
   arc((m*3+m/2),m*5,(m*1+m/2),(m*1+m/2),radians(45),radians(135));
+  pop();
 }
